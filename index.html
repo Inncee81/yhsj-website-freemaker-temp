@@ -1,0 +1,28 @@
+[#escape x as (x)!?html]
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  [#include "_Head.html"]
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no" >
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,shrink-to-fit=no" >
+
+  <title>${PAGE_TITLE}</title>
+  <meta name="keywords" content="${PAGE_KEYWORDS}">
+  <meta name="description" content="${PAGE_DESCRIPTION}">
+
+  <link rel="icon" href="_files/assets/images/favicon.ico">
+  <link rel="stylesheet" href="_files/styles/main.css">
+</head>
+<body>
+  [#include '_Header.html' /]
+
+  <div class="wrap"></div>
+
+  [#include '_Footer.html'/]
+
+  <script src="_files/scripts/main.js"></script>
+</body>
+</html>
+[/#escape]
