@@ -1,5 +1,13 @@
 [#escape x as (x)!?html]
 <!-- Heard Start -->
-<header class="header"></header>
+<header class="header">
+    <nav>
+        [@NodeList;list]
+        [#list list as node]
+        <div><a href="${node.url}">${node.name}</a></div>
+        [/#list]
+        [/@NodeList]
+    </nav>
+</header>
 <!-- Heard End -->
 [/#escape]
