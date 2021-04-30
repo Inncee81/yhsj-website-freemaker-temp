@@ -1,20 +1,17 @@
 [#--
-    PAGE_TITLE 页面关键词
-    PAGE_KEYWORDS 页面关键词
-    PAGE_DESCRIPTION 页面描述
-    __Logo 公司标志
-    __Company 公司名称
-    __Address 公司地址
-    __Phone 公司手机号码
-    __FixedLine公司固定电话
-    __MailAddress 邮箱联系人
-    __Icp 公司备案号
-    __SiteFaviconIco 站点图标
-    __BaiduAnalytics 站点百度统计
-    __GoogleAnalytics 站点谷歌统计
-    __WechatQrCode 站点二维码
+    PAGE_TITLE                  页面关键词
+    PAGE_KEYWORDS               页面关键词
+    PAGE_DESCRIPTION            页面描述
+    LOGO                        公司标志
+    COMPANY                     公司名称
+    ADDRESS                     公司地址
+    PHONE                       公司手机号码
+    FIXED_LINE                  公司固定电话
+    MAIL_ADDRESS                邮箱联系人
+    ICP                         公司备案号
+    NALYTITCS_CODE              谷歌或者百度统计
+    WECHAT_QR_CODE              站点二维码
 --]
-
 
 
 [#--页面关键词 --]
@@ -37,14 +34,12 @@
 [#elseif (node.metaDescription)??][#assign PAGE_DESCRIPTION = node.metaDescription][/#if]
 
 [#-- 网站配置项 --]
-[#assign __Logo = '' + site.customs['logo']]
-[#assign __Company = '' + site.customs['company']]
-[#assign __Address = '' + site.customs['address']]
-[#assign __Phone = '' + site.customs['phone']!"10086"]
-[#assign __FixedLine = '' + site.customs['fixed-line']]
-[#assign __MailAddress = '' + site.customs['mail-address']]
-[#assign __Icp = '' + site.customs['icp']]
-[#assign __SiteFaviconIco= '' + site.customs['favicon_ico']!"10086"]
-[#assign __BaiduAnalytics = '' + site.customs['baidu-analytics']!"10086"]
-[#assign __GoogleAnalytics = '' + site.customs['google-analytics']!"10086"]
-[#assign __WechatQrCode = '' + site.customs['weChat-qr-code']]
+[#assign LOGO = '' + site.customs['logo']]
+[#assign COMPANY = '' + site.customs['company']]
+[#assign ADDRESS = '' + site.customs['address']]
+[#assign PHONE = '' + site.customs['phone']!"10086"]
+[#assign FIXED_LINE = '' + site.customs['fixed-line']]
+[#assign MAIL_ADDRESS = '' + site.customs['mail-address']]
+[#assign ICP = '' + site.customs['icp']]
+[#assign NALYTITCS_CODE = '' + site.customs['analytics']!"10086"]
+[#assign WECHAT_QR_CODE = '' + site.customs['weChat-qr-code']]
