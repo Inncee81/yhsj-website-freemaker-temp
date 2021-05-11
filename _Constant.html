@@ -1,5 +1,5 @@
 [#--
-    PAGE_TITLE                  页面关键词
+    PAGE_TITLE                  页面标题
     PAGE_KEYWORDS               页面关键词
     PAGE_DESCRIPTION            页面描述
     LOGO                        公司标志
@@ -10,11 +10,11 @@
     MAIL_ADDRESS                邮箱联系人
     ICP                         公司备案号
     NALYTITCS_CODE              谷歌或者百度统计
-    WECHAT_QR_CODE              站点二维码
+    RECEPTION_YZF_CODE          腾讯云智服公司渠道唯一标识
 --]
 
 
-[#--页面关键词 --]
+[#--页面标题--]
 [#assign PAGE_TITLE = ""] [#if info??][#assign PAGE_TITLE = info.fullTitle ! info.title]
 [#elseif node??][#assign PAGE_TITLE = node.customs['title'] ! node.name]
 [#else][#assign PAGE_TITLE = "搜索结果"]
@@ -34,12 +34,12 @@
 [#elseif (node.metaDescription)??][#assign PAGE_DESCRIPTION = node.metaDescription][/#if]
 
 [#-- 网站配置项 --]
-[#assign LOGO = '' + site.customs['logo']]
-[#assign COMPANY = '' + site.customs['company']]
-[#assign ADDRESS = '' + site.customs['address']]
-[#assign PHONE = '' + site.customs['phone']!"10086"]
-[#assign FIXED_LINE = '' + site.customs['fixed-line']]
-[#assign MAIL_ADDRESS = '' + site.customs['mail-address']]
-[#assign ICP = '' + site.customs['icp']]
-[#assign NALYTITCS_CODE = '' + site.customs['analytics']!"10086"]
-[#assign WECHAT_QR_CODE = '' + site.customs['weChat-qr-code']]
+[#assign LOGO                   = '' + site.customs['logo']]
+[#assign COMPANY                = '' + site.customs['company']]
+[#assign ADDRESS                = '' + site.customs['address']]
+[#assign PHONE                  = '' + site.customs['phone']!"10086"]
+[#assign FIXED_LINE             = '' + site.customs['fixed_line']]
+[#assign MAIL_ADDRESS           = '' + site.customs['mail_address']]
+[#assign ICP                    = '' + site.customs['icp']]
+[#assign NALYTITCS_CODE         = '' + site.customs['analytics']!"10086"]
+[#assign RECEPTION_YZF_CODE     = '' + site.customs['reception_yzf_code']]
